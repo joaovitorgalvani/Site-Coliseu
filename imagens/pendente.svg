@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img"
+     aria-label="Imagem pendente — foto real ainda a coletar">
+  <rect width="1200" height="675" fill="#e6e2dc"/>
+  <rect x="20" y="20" width="1160" height="635" fill="none" stroke="#b3aca2"
+        stroke-width="4" stroke-dasharray="18 14"/>
+  <g fill="#b3aca2">
+    <circle cx="470" cy="270" r="46"/>
+    <path d="M300 470 L520 320 L660 420 L820 300 L950 470 Z"/>
+  </g>
+  <text x="600" y="560" font-family="Arial, Helvetica, sans-serif" font-size="46"
+        font-weight="bold" fill="#7d7469" text-anchor="middle">IMAGEM PENDENTE</text>
+  <text x="600" y="610" font-family="Arial, Helvetica, sans-serif" font-size="30"
+        fill="#7d7469" text-anchor="middle">foto real ainda a coletar com o cliente</text>
+</svg>

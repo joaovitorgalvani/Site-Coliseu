@@ -1,0 +1,60 @@
+Coloque aqui as imagens do projeto: logo, fotos, ícones.
+
+Duas regras que evitam a maior parte dos problemas:
+
+1. Nome de arquivo sem espaço, sem acento e em minúsculas.
+   logo.png   fachada.jpg   cardapio-01.jpg
+   NÃO: "Logo Final (2).PNG"
+
+2. Foto de celular costuma ter 4 ou 5 MB e deixa o site lento.
+   Antes de usar, reduza a largura para no máximo 1600 pixels.
+
+
+ENQUANTO A IMAGEM REAL NÃO EXISTIR
+
+Não pare o trabalho esperando o cliente mandar a foto. Use o
+"pendente.svg" que já está nesta pasta — ele ocupa o espaço no
+layout e diz na própria imagem que aquilo ainda vai ser trocado.
+
+  <img src="imagens/pendente.svg" alt="[A DEFINIR] foto da fachada">
+
+O que NÃO fazer é tapar o buraco com foto genérica de banco de
+imagem. O espaço reservado avisa que falta; a foto bonita de outro
+lugar faz o cliente achar que já está resolvido — e aí o material
+real nunca chega.
+
+ANOTE O QUE FALTA, NUMA LISTA
+
+Cada vez que usar um espaço reservado, escreva numa lista o que
+precisa ser coletado, de quem e para quê:
+
+  - foto da fachada, de dia .......... cliente tirar no celular
+  - logo em arquivo (PNG ou vetor) ... pedir ao designer antigo
+  - horário de funcionamento ......... confirmar com o proprietário
+
+Fotos necessárias para as categorias da seção Equipamentos:
+  - pernas e glúteos ................. cliente fornecer foto
+  - costas .......................... cliente fornecer foto
+  - peito ........................... cliente fornecer foto
+  - braços .......................... cliente fornecer foto
+  - multi trabalho .................. cliente fornecer foto
+  - deltoides ....................... cliente fornecer foto
+  - panturrilhas .................... cliente fornecer foto
+  - acessórios ...................... cliente fornecer foto
+  - retrato do fundador Rafael Godoi Mantovani ... cliente fornecer foto
+  - Scott Articulado ................ cliente fornecer foto do equipamento
+  - Cadeira Extensora Brutal ........ cliente fornecer foto do equipamento
+  - Leg Press 45° ................... cliente fornecer foto do equipamento
+  - Hack 45° ........................ cliente fornecer foto do equipamento
+  - Remada Alta Articulada .......... cliente fornecer foto do equipamento
+  - Cadeira Extensora e Flexora ..... cliente fornecer foto do equipamento
+  - Supino Inclinado Articulado ..... cliente fornecer foto do equipamento
+  - Puxada-Remada 2 em 1 ............ cliente fornecer foto do equipamento
+
+Essa lista é entregável: é ela que você leva na conversa com o
+cliente. Projeto trava por falta de material, e mostrar exatamente
+o que falta é o que destrava. Chegar dizendo "faltam estas três
+coisas" é trabalho feito, não atraso.
+
+E na hora de publicar, ela vira a checagem final: não vai ao ar
+nenhum "pendente.svg" nem nenhum [A DEFINIR].
