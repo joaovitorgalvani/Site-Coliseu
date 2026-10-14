@@ -16,13 +16,17 @@
       </a>
 
       <nav aria-label="Navegação principal" class="main-nav-wrap">
-        <ul class="main-nav">
+        <button class="main-nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="main-nav" id="main-nav">
           <li><a href="#top">Home</a></li>
           <li><a href="#equipamentos">Equipamentos</a></li>
           <li><a href="#linhas">Linhas</a></li>
           <li><a href="https://wa.me/5517996495696" target="_blank" rel="noreferrer">Contatos</a></li>
           <li><a href="#diferenciais">Nossos diferenciais</a></li>
-          <li><a href="#contatos">Trabalhe conosco</a></li>
         </ul>
       </nav>
 
@@ -311,5 +315,32 @@
       <source src="imagens/whatsapp-flutuante.mp4" type="video/mp4">
     </video>
   </a>
+  <script>
+    const menuToggle = document.querySelector(".main-nav-toggle");
+    const mainNav = document.querySelector(".main-nav-wrap");
+
+    menuToggle.addEventListener("click", () => {
+      const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+      menuToggle.setAttribute("aria-expanded", String(!isOpen));
+      menuToggle.setAttribute("aria-label", isOpen ? "Abrir menu" : "Fechar menu");
+      mainNav.classList.toggle("is-open", !isOpen);
+    });
+
+    mainNav.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Abrir menu");
+        mainNav.classList.remove("is-open");
+      });
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Abrir menu");
+        mainNav.classList.remove("is-open");
+      }
+    });
+  </script>
 </body>
 </html>
